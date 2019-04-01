@@ -1,0 +1,20 @@
+{
+  "name": "ndstsrv",
+  "version": "1.0.0",
+  "description": "node static server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "static",
+    "server",
+    "http"
+  ],
+  "author": "mlapin",
+  "license": "ISC",
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }
+}

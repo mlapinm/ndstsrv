@@ -1,0 +1,17 @@
+
+
+
+-----
+
+var static = require('node-static');
+//Создание node-static сервера, обслуживающего папку ./public
+var file = new static.Server('./');
+
+require('http').createServer(function (request, response) {
+    request.addListener('end', function () {
+        // Работа с файлами
+        file.serve(request, response);
+    }).resume();
+}).listen(3000);
+//ok
+-----
